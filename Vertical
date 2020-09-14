@@ -1,0 +1,43 @@
+#include <iostream>
+/*                                                          ----NOTES---- 
+    Jai deja passé par plusieurs session de C+= a un autre cegep, cette methode est un plus avancé que ce que vous avez montrée en classe
+*/
+using namespace std;
+    /*DEFINIR LES VARIABLES*/
+long int x, q;
+int nr = 0;
+long int p = 1;
+int par;
+
+int main()
+{  /*DEFINIR LE COUT ET CIN*/
+   cout << "Entre un nombre: " << endl;
+   cin >> x;
+   q = x;
+
+    /* LOOP POUR LA SEPARATION DES CHIFFRES JUSQUA TEMPS QUE TOUTES LES CHIFFRES SONT SEPRARÉ*/
+     while (x != 0)
+        {
+        nr = nr + 1;
+        x = x / 10;
+        }
+            for (int i = 1; i < nr; i++)
+            {
+              p = p * 10;
+            }
+                 while (q != 0)
+                 {
+                    par = q / p;
+                    q = q % p;
+                    p = p / 10;
+                    cout << par << endl;
+                 }
+
+    return 0;
+    /* 12345 
+            1
+            2
+            3
+            4
+            5*/
+}
