@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    /*DEFINIR UNE VARIABLE "N" COMME ETANT LE CHIFFRE A ENTRER*/
+    int n;
+
+    cout << "Entre un chiffre: ";
+    cin >> n;
+    /*n% 2 == 0 FORMULE POUR DETERMINER CHIFFRE PAIR OUR IMPAIR*/
+    if (n % 2 == 0)
+        /*COUT ET CIN POUR LES DEUX OPTIONS DE REPONSES*/
+        cout << n << " est un nombre pair.";
+    else
+        cout << n << " est un nombre impair.";
+
+    return 0;
+
+
+    /* PLAN DE TEST 
+        45 = NOMBRE IMPAIR
+            52 = NOMBRE PAIR
+                10 = NOMBRE PAIR 
+                    15 = NOMBRE IMPAIR*/
+}
