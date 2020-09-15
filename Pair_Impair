@@ -19,6 +19,7 @@ int main()
 
 
     /* PLAN DE TEST 
+    // KM : Pour varier, essaie un nombre négatif et 0
         45 = NOMBRE IMPAIR
             52 = NOMBRE PAIR
                 10 = NOMBRE PAIR 
