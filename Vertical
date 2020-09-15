@@ -4,10 +4,13 @@
 */
 using namespace std;
     /*DEFINIR LES VARIABLES*/
+    
+// KM : évite de mettre des déclarations de variables en dehors d'une fonction
 long int x, q;
 int nr = 0;
 long int p = 1;
 int par;
+// KM : Les noms de ces variables ne sont pas très explicites et du coup le code est moins facile à lire et le raisonnement plus difficile à comprendre
 
 int main()
 {  /*DEFINIR LE COUT ET CIN*/
@@ -15,7 +18,8 @@ int main()
    cin >> x;
    q = x;
 
-    /* LOOP POUR LA SEPARATION DES CHIFFRES JUSQUA TEMPS QUE TOUTES LES CHIFFRES SONT SEPRARÉ*/
+    /* FR : LOOP POUR LA SEPARATION DES CHIFFRES JUSQUA TEMPS QUE TOUTES LES CHIFFRES SONT SEPRARÉ*/
+    // KM : Explique ce que fait la première boucle et ce que fait la deuxième, même si c'est évident pour toi.
      while (x != 0)
         {
         nr = nr + 1;
